@@ -3,23 +3,23 @@
     "Skills": [
         {
             "skill": "HTML 5",
-            "image": "./src/Images/png-clipart-html-logo-html5-logo-icons-logos-emojis-tech-companies-thumbnail.png"
+            "image": "/Images/png-clipart-html-logo-html5-logo-icons-logos-emojis-tech-companies-thumbnail.png"
         },
         {
             "skill": "CSS 3",
-            "image": "./src/Images/CSS-Logo.png"
+            "image": "/Images/CSS-Logo.png"
         },
         {
             "skill": "JS",
-            "image": "./src/Images/Unofficial_JavaScript_logo_2.svg.png"
+            "image": "/Images/Unofficial_JavaScript_logo_2.svg.png"
         },
         {
             "skill": "NODE JS",
-            "image": "./src/Images/1_TY9uBBO9leUbRtlXmQBiug.png"
+            "image": "/Images/1_TY9uBBO9leUbRtlXmQBiug.png"
         },
         {
             "skill": "REACT JS",
-            "image": "./src/Images/png-transparent-js-react-js-logo-react-react-native-logos-icon-thumbnail.png"
+            "image": "/Images/png-transparent-js-react-js-logo-react-react-native-logos-icon-thumbnail.png"
         }
     ],
     "school": [
@@ -36,7 +36,7 @@
             "from": "2011",
             "to": "2014",
             "position": "none",
-            "image": "./src/Images/JHS Certificate.jpg"
+            "image": "/Images/JHS Certificate.jpg"
         },
         {
             "category": "SHS",
@@ -45,7 +45,7 @@
             "from": "2014",
             "to": "2017",
             "position": "none",
-            "image": "./src/Images/SHS Certificate.jpg"
+            "image": "/Images/SHS Certificate.jpg"
         },
         {
             "category": "College",
@@ -54,7 +54,7 @@
             "from": "2018",
             "to": "2022",
             "position": "none",
-            "image": "./src/Images/COLLEGE Certicate.jpg"
+            "image": "/Images/COLLEGE Certicate.jpg"
         }
     ],
     "projects": [
@@ -62,25 +62,25 @@
             "project": "Front End",
             "name": "ShipIt Logistics",
             "link": "https://shipitlogistics.netlify.app/",
-            "image": "./src/Images/ShipIt.png"
+            "image": "/Images/ShipIt.png"
         },
         {
             "project": "Front End",
             "name": "Gariba Lodge Hotel",
             "link": "https://garibalodgehotel.netlify.app/",
-            "image": "./src/Images/Gariba lodge.png"
+            "image": "/Images/Gariba lodge.png"
         },
         {
             "project": "Front End",
             "name": "Multi Step Form",
             "link": "https://phantom101-ib.github.io/multistep-form/",
-            "image": "./src/Images/active-states-step-3.jpg"
+            "image": "/Images/active-states-step-3.jpg"
         },
         {
             "project": "Front End",
             "name": "Age Calculator",
             "link": "https://phantom101-ib.github.io/Age-calculator-app/",
-            "image": "../src/Images/active-states.jpg"
+            "image": "/Images/active-states.jpg"
         },
         {
             "project": "Backend",
@@ -101,19 +101,19 @@
             "project": "Fullstack",
             "name": "Gariba Lodge Hotel",
             "link": "https://garibatrial.onrender.com",
-            "image": "../src/Images/Gariba lodge.png"
+            "image": "src/Images/Gariba lodge.png"
         },
         {
             "project": "Fullstack",
             "name": "Food App",
             "link": "http/link",
-            "image": "../src/Images/Gariba lodge.png"
+            "image": "src/Images/Gariba lodge.png"
         },
         {
             "project": "Fullstack",
             "name": "Portfolio App",
             "link": "http/link",
-            "image": "../src/Images/Portfolio1.png"
+            "image": "src/Images/Portfolio1.png"
         }
     ]
 }
