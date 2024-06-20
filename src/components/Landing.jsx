@@ -63,7 +63,7 @@ const Landing = () => {
                 <div className="image-div">
                     <div className="img">
                         <img
-                            src="../Images/IMG-20191225-WA0001.jpg"
+                            src="/Images/IMG-20191225-WA0001.jpg"
                             alt="profile"
                         />
                     </div>
