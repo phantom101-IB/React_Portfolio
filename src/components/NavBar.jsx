@@ -23,7 +23,7 @@ const Navbar = () => {
             localStorage.removeItem("token")
             localStorage.removeItem("name")
             location.reload()
-        }, 60000)
+        }, 600000)
     }
 
     return (
