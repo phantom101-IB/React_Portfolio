@@ -90,30 +90,32 @@
         {
             "project": "Backend",
             "name": "Foods API",
-            "link": "https://foods-api-c8ve.onrender.com/api/v1/foods"
+            "link": "https://foods-api-c8ve.onrender.com/api/v1/foods",
+            "image": "/Images/API.png"
         },
         {
             "project": "Backend",
             "name": "Portfolio API",
-            "link": "https://portforlio-czn6.onrender.com/"
+            "link": "https://portforlio-czn6.onrender.com/",
+            "image": "/Images/API.png"
         },
         {
             "project": "Fullstack",
             "name": "Gariba Lodge Hotel",
             "link": "https://garibatrial.onrender.com",
-            "image": "src/Images/Gariba lodge.png"
+            "image": "/Images/Gariba lodge.png"
         },
         {
             "project": "Fullstack",
             "name": "Food App",
             "link": "http/link",
-            "image": "src/Images/Gariba lodge.png"
+            "image": "/Images/Gariba lodge.png"
         },
         {
             "project": "Fullstack",
             "name": "Portfolio App",
             "link": "http/link",
-            "image": "src/Images/Portfolio1.png"
+            "image": "/Images/Portfolio1.png"
         }
     ]
 }
