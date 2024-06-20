@@ -1,0 +1,119 @@
+{
+    "NavButtons": ["Home", "Contacts", "Login"],
+    "Skills": [
+        {
+            "skill": "HTML 5",
+            "image": "/src/Images/png-clipart-html-logo-html5-logo-icons-logos-emojis-tech-companies-thumbnail.png"
+        },
+        {
+            "skill": "CSS 3",
+            "image": "/src/Images/CSS-Logo.png"
+        },
+        {
+            "skill": "JS",
+            "image": "/src/Images/Unofficial_JavaScript_logo_2.svg.png"
+        },
+        {
+            "skill": "NODE JS",
+            "image": "/src/Images/1_TY9uBBO9leUbRtlXmQBiug.png"
+        },
+        {
+            "skill": "REACT JS",
+            "image": "/src/Images/png-transparent-js-react-js-logo-react-react-native-logos-icon-thumbnail.png"
+        }
+    ],
+    "school": [
+        {
+            "category": "Primary",
+            "name": "Our Lady of Fatima Primary School",
+            "from": "2002",
+            "to": "2011",
+            "position": "none"
+        },
+        {
+            "category": "JHS",
+            "name": "Our Lady of Fatima Junior High School",
+            "from": "2011",
+            "to": "2014",
+            "position": "none",
+            "image": "/src/Images/JHS Certificate.jpg"
+        },
+        {
+            "category": "SHS",
+
+            "name": "Northern School of Business",
+            "from": "2014",
+            "to": "2017",
+            "position": "none",
+            "image": "/src/Images/SHS Certificate.jpg"
+        },
+        {
+            "category": "College",
+
+            "name": "Tamale College of Education",
+            "from": "2018",
+            "to": "2022",
+            "position": "none",
+            "image": "/src/Images/COLLEGE Certicate.jpg"
+        }
+    ],
+    "projects": [
+        {
+            "project": "Front End",
+            "name": "ShipIt Logistics",
+            "link": "https://shipitlogistics.netlify.app/",
+            "image": "/src/Images/ShipIt.png"
+        },
+        {
+            "project": "Front End",
+            "name": "Gariba Lodge Hotel",
+            "link": "https://garibalodgehotel.netlify.app/",
+            "image": "/src/Images/Gariba lodge.png"
+        },
+        {
+            "project": "Front End",
+            "name": "Multi Step Form",
+            "link": "https://phantom101-ib.github.io/multistep-form/",
+            "image": "/src/Images/active-states-step-3.jpg"
+        },
+        {
+            "project": "Front End",
+            "name": "Age Calculator",
+            "link": "https://phantom101-ib.github.io/Age-calculator-app/",
+            "image": "/src/Images/active-states.jpg"
+        },
+        {
+            "project": "Backend",
+            "name": "Gariba Lodge API",
+            "link": "https://garibatrial.onrender.com/api/v1/reviews"
+        },
+        {
+            "project": "Backend",
+            "name": "Foods API",
+            "link": "https://foods-api-c8ve.onrender.com/api/v1/foods"
+        },
+        {
+            "project": "Backend",
+            "name": "Portfolio API",
+            "link": "https://portforlio-czn6.onrender.com/"
+        },
+        {
+            "project": "Fullstack",
+            "name": "Gariba Lodge Hotel",
+            "link": "https://garibatrial.onrender.com",
+            "image": "/src/Images/Gariba lodge.png"
+        },
+        {
+            "project": "Fullstack",
+            "name": "Food App",
+            "link": "http/link",
+            "image": "/src/Images/Gariba lodge.png"
+        },
+        {
+            "project": "Fullstack",
+            "name": "Portfolio App",
+            "link": "http/link",
+            "image": "/src/Images/Portfolio1.png"
+        }
+    ]
+}

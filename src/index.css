@@ -1,0 +1,973 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+:root {
+    /* Colors */
+    --primary-color: #2e656a;
+    --secondary-color: #ffcd04;
+    --tertiary-color: #0072ff;
+    --text-color: #ffffff;
+
+    /* Sizes */
+    --nav-size: 20px;
+    --logo-size: 30px;
+    --big-size: 100px;
+    --text-font: 20px;
+    --heading-size: 25.5px;
+    --small-size: 18px;
+}
+
+/* Navbar Styling */
+.nav-bar {
+    height: 70px;
+    background: var(--primary-color);
+    /* display: flex;
+    justify-content: center; */
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 20;
+}
+
+.nav-controller {
+    display: flex;
+    height: 100%;
+    /* width: 100%; */
+    justify-content: space-between;
+    align-items: center;
+    /* max-width: 1632px; */
+    padding: 0% 8%;
+}
+
+/* .nav-controller > * {
+    flex-basis: 100%;
+} */
+
+.logo-div h3 {
+    font-size: var(--logo-size);
+    color: var(--text-color);
+}
+
+.nav-buttons {
+    display: flex;
+    column-gap: 25px;
+}
+
+.nav-buttons li {
+    font-size: var(--nav-size);
+    color: var(--text-color);
+    cursor: pointer;
+    position: relative;
+    font-weight: 100;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+}
+
+.nav-buttons li > * {
+    color: var(--text-color);
+}
+
+.nav-buttons.Login li:nth-child(3) {
+    display: none;
+}
+
+.nav-buttons li.active::after {
+    content: "";
+    width: 100%;
+    height: 3px;
+    background: var(--tertiary-color);
+    position: absolute;
+    transform: translateX(-1%);
+    bottom: -5px;
+    left: 0;
+}
+
+.profile {
+    position: relative;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.profile-item {
+    font-size: var(--nav-size);
+    color: var(--text-color);
+    display: flex;
+    align-items: center;
+}
+
+.profile p {
+    position: absolute;
+    font-size: 12px;
+    left: 0;
+    right: 0;
+    transform: translateX(-50%);
+    color: var(--text-color);
+    visibility: hidden;
+}
+
+.profile:hover p {
+    visibility: visible;
+}
+
+.hamburger-menu {
+    display: none;
+}
+
+/* Landing Styling */
+.landing-page {
+    width: 100%;
+    height: calc(100vh - 100px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10%;
+    /* border-bottom: 1px solid var(--tertiary-color); */
+}
+
+.land-controller {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    column-gap: 5rem;
+    padding: 0% 8%;
+}
+
+.text-div {
+    width: 70%;
+}
+
+.text-main {
+    margin-top: 4%;
+}
+/* i am styling */
+.i-am h1 {
+    font-size: var(--big-size);
+    color: var(--text-color);
+}
+
+.i-am h1 span {
+    color: var(--secondary-color);
+}
+
+.p-div {
+    max-width: 70%;
+}
+
+.p-div p {
+    font-size: var(--text-font);
+    color: var(--text-color);
+    margin-top: 10px;
+    line-height: 30px;
+}
+
+.image-div {
+    width: 30%;
+}
+
+.img::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: var(--tertiary-color);
+    transform: translate(10px, 6px);
+    position: absolute;
+    border-radius: inherit;
+    z-index: -1;
+}
+
+.img {
+    position: relative;
+    width: 100%;
+    /* height: 604px; */
+    border-radius: 30px;
+}
+
+.img img {
+    width: 100%;
+    /* height: 100%; */
+    border-radius: inherit;
+}
+
+.skill-div {
+    margin-top: 5%;
+}
+
+.skills-div {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    column-gap: 2%;
+    row-gap: 0.5rem;
+}
+
+.skill-div h3 {
+    text-align: center;
+    color: var(--text-color);
+    font-size: var(--text-font);
+    margin-bottom: 10px;
+}
+
+.skill-img {
+    width: 100%;
+    height: 100%;
+    background: var(--text-color);
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.skill-control h4 {
+    font-size: var(--small-size);
+    color: var(--text-color);
+    text-align: center;
+    margin-top: 5px;
+}
+
+.skill-img img {
+    width: 100%;
+    border-radius: inherit;
+    object-fit: cover;
+    /* height: 100%; */
+}
+
+.skill-control:nth-child(3) img {
+    height: 100%;
+}
+/* Schools Styling */
+.education-section {
+    margin-top: 8%;
+    width: 100%;
+    border-bottom: 1px solid var(--text-color);
+}
+
+.education-control {
+    padding: 0% 8%;
+}
+
+.education-control h3 {
+    text-align: left;
+    color: var(--text-color);
+    font-size: var(--heading-size);
+}
+
+.education {
+    margin-top: 1rem;
+}
+
+.edu-buttons {
+    display: flex;
+    column-gap: 2rem;
+    color: var(--text-color);
+    font-weight: 500;
+    font-size: var(--text-font);
+    cursor: pointer;
+    letter-spacing: 2px;
+}
+
+.edu-level {
+    margin-top: 2rem;
+}
+
+.edu-level-details {
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+}
+
+.edu-level-text-details h4 {
+    color: var(--text-color);
+    font-size: var(--small-size);
+    line-height: 2.5rem;
+}
+
+.edu-level-text-details h4 span {
+    color: var(--secondary-color);
+    font-weight: 400;
+}
+
+.edu-cert {
+    width: 200px;
+    height: 250px;
+    background: var(--text-color);
+    border-radius: 20px;
+}
+
+.edu-cert img {
+    height: 100%;
+    width: 100%;
+    border-radius: inherit;
+}
+
+.edu-level-cert h4 {
+    margin-top: 0.5rem;
+    text-align: center;
+    color: var(--secondary-color);
+    font-size: var(--small-size);
+}
+
+/* Projects Styling */
+.project-main {
+    margin-top: 3%;
+    width: 100%;
+    border-bottom: 1px solid var(--secondary-color);
+}
+
+.project-main h3 {
+    text-align: center;
+    font-size: var(--heading-size);
+    color: var(--text-color);
+    text-transform: uppercase;
+}
+
+.project-control {
+    padding: 0% 8%;
+    margin-top: 1rem;
+}
+
+.projects {
+    display: grid;
+    /* width: max-content; */
+    grid-template-columns: repeat(5, 1fr);
+    column-gap: 1rem;
+    row-gap: 5%;
+    margin-top: 2rem;
+}
+
+.project-div h4 {
+    text-align: center;
+    font-size: var(--small-size);
+    color: var(--text-color);
+    margin-top: 8px;
+    letter-spacing: 1px;
+}
+
+.project-img {
+    /* width: 300px; */
+    width: 100%;
+    height: 80%;
+    background: var(--text-color);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-img img {
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 1/0.8;
+    border-radius: inherit;
+}
+
+/* Footer Styling */
+
+.Footer {
+    width: 100%;
+    margin-top: 2rem;
+}
+
+.footer-control {
+    padding: 0% 8%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.socials h4 {
+    font-size: var(--small-size);
+    color: var(--text-color);
+    letter-spacing: 1.5px;
+}
+
+.social-handler {
+    margin-top: 1rem;
+    display: flex;
+    column-gap: 15px;
+}
+
+.social-handler a {
+    color: var(--secondary-color);
+    font-size: var(--text-font);
+}
+
+.direct-message {
+    width: 300px;
+}
+
+.direct-message form {
+    width: 100%;
+}
+
+.direct-message h3 {
+    font-size: var(--small-size);
+    color: var(--text-color);
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.direct-message form {
+    width: 100%;
+}
+
+.direct-message textarea {
+    padding: 10px 10px;
+    width: 80%;
+    height: 150px;
+    outline: none;
+}
+
+.email-div input {
+    width: 80%;
+    height: 30px;
+    outline: none;
+    border-radius: 5px;
+    padding: 0px 10px;
+    margin-bottom: 10px;
+    border: 1px solid #000;
+}
+
+.button-div {
+    width: 100%;
+}
+
+.button-div input {
+    width: 80%;
+    height: 30px;
+    font-size: 15px;
+    border-radius: 5px;
+    padding: 0px 10px;
+    font-weight: 600;
+    background: var(--tertiary-color);
+    color: var(--secondary-color);
+    border: none;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+/* Contacts */
+
+.contacts-section {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contacts-div h3 {
+    font-size: var(--small-size);
+    color: var(--text-color);
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+.contacts-div ul {
+    padding: 10px;
+    border: 1px solid var(--secondary-color);
+    border-radius: 10px;
+}
+.contacts-div ul li {
+    font-size: var(--nav-size);
+    display: flex;
+    align-items: center;
+    column-gap: 2px;
+    color: var(--text-color);
+    vertical-align: middle;
+    padding: 5px 0px;
+}
+
+.contacts-div ul li span {
+    font-size: var(--small-size);
+    letter-spacing: 1px;
+    color: var(--secondary-color);
+}
+
+/* Login */
+
+.login-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url("/src/Images/Hot Air.jpg") no-repeat center center/cover;
+}
+
+.login-section::after {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.login-control {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    /* border: 1px solid var(--text-color); */
+}
+
+.login-control h3 {
+    color: var(--text-color);
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+.login-control form {
+    padding: 10px;
+    width: 50%;
+    border: 1px solid var(--text-color);
+    border-radius: 5px;
+    backdrop-filter: blur(10px);
+}
+
+.login-control form > div {
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+}
+
+.login-control form > div label {
+    font-size: 15px;
+    margin-bottom: 2%;
+    font-weight: 500;
+    color: var(--text-color);
+    letter-spacing: 1px;
+}
+
+.login-control form > div input {
+    outline: none;
+    height: 30px;
+    padding: 0px 10px;
+    border-radius: 5px;
+    border: 1px solid var(--text-color);
+    font-size: 12px;
+}
+
+.submit-input {
+    width: 100%;
+    padding: 6px 0px;
+    margin-top: 2%;
+    border-radius: 10px;
+    border: none;
+    font-weight: 600;
+    background: var(--secondary-color);
+    color: var(--primary-color);
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.55s linear;
+}
+
+.submit-input:hover {
+    background: var(--tertiary-color);
+    color: var(--text-color);
+}
+
+.login-control form p {
+    font-size: 10px;
+    color: red;
+    padding: 2px 0px;
+    text-align: center;
+}
+
+.Loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 120;
+    backdrop-filter: blur(4px);
+}
+
+.loading-item {
+    width: 120px;
+    height: 120px;
+    /* border: 4px solid black;
+    border-radius: 50%; */
+    position: relative;
+    transform: rotate(270deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loading-item > div {
+    position: absolute;
+    transform: rotate(90deg);
+    padding-left: 10px;
+    color: var(--text-color);
+}
+
+.Loading svg {
+    position: relative;
+    width: 120px;
+    height: 120px;
+}
+
+.Loading svg circle {
+    height: 100%;
+    width: 100%;
+    fill: transparent;
+    stroke: var(--text-color);
+    stroke-width: 4px;
+    transform: translate(5px, 5px);
+}
+
+.Loading svg circle:nth-child(2) {
+    stroke: var(--primary-color);
+    stroke-dasharray: 440;
+    stroke-width: 5px;
+    animation-timing-function: 0;
+    animation: stroke 2s ease-in-out infinite;
+}
+
+@keyframes stroke {
+    0% {
+        stroke-dashoffset: 440;
+    }
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+
+/* .loading-item::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    border: 3px solid var(--secondary-color);
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+} */
+
+/* .Loading h1 {
+    font-size: var(--logo-size);
+    color: var(--text-color);
+    text-align: center;
+    vertical-align: middle;
+    animation: Rotation 0.55s infinite;
+}
+
+@keyframes Rotation {
+    from 0% {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+} */
+
+@media (max-width: 1440px) {
+    :root {
+        /* Colors */
+        --primary-color: #2e656a;
+        --secondary-color: #ffcd04;
+        --tertiary-color: #0072ff;
+        --text-color: #ffffff;
+
+        /* Sizes */
+        --nav-size: 20px;
+        --logo-size: 30px;
+        --big-size: 70px;
+        --text-font: 16px;
+        --heading-size: 17px;
+        --small-size: 18px;
+    }
+}
+
+@media (max-width: 1280px) {
+    :root {
+        /* Colors */
+        --primary-color: #2e656a;
+        --secondary-color: #ffcd04;
+        --tertiary-color: #0072ff;
+        --text-color: #ffffff;
+
+        /* Sizes */
+        --nav-size: 20px;
+        --logo-size: 30px;
+        --big-size: 60px;
+        --text-font: 14px;
+        --heading-size: 17px;
+        --small-size: 14px;
+    }
+
+    .projects {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .edu-level-details {
+        width: 70%;
+    }
+}
+
+@media (max-width: 840px) {
+    :root {
+        /* Colors */
+        --primary-color: #2e656a;
+        --secondary-color: #ffcd04;
+        --tertiary-color: #0072ff;
+        --text-color: #ffffff;
+
+        /* Sizes */
+        --nav-size: 15px;
+        --logo-size: 25px;
+        --big-size: 42px;
+        --text-font: 12px;
+        --heading-size: 17px;
+        --small-size: 14px;
+    }
+
+    .land-controller {
+        column-gap: 2rem;
+    }
+
+    .p-div {
+        max-width: 100%;
+    }
+
+    .landing-page {
+        height: max-content;
+        padding-top: 15%;
+    }
+
+    .edu-level-details {
+        width: 100%;
+    }
+
+    .direct-message {
+        width: 35%;
+    }
+
+    .edu-level {
+        margin-top: 2%;
+    }
+
+    .projects {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .skills-div {
+        grid-template-columns: repeat(4, 1fr);
+        row-gap: 10%;
+    }
+    .email-div input {
+        width: 100%;
+    }
+
+    .direct-message textarea {
+        width: 100%;
+    }
+
+    .button-div input {
+        width: 100%;
+    }
+
+    .login-control form {
+        width: 70%;
+    }
+}
+
+@media (max-width: 768px) {
+    :root {
+        /* Colors */
+        --primary-color: #2e656a;
+        --secondary-color: #ffcd04;
+        --tertiary-color: #0072ff;
+        --text-color: #ffffff;
+
+        /* Sizes */
+        --nav-size: 15px;
+        --logo-size: 25px;
+        --big-size: 40px;
+        --text-font: 12px;
+        --heading-size: 17px;
+        --small-size: 14px;
+    }
+
+    .login-control {
+        width: 70%;
+    }
+}
+
+@media (max-width: 430px) {
+    :root {
+        /* Colors */
+        --primary-color: #2e656a;
+        --secondary-color: #ffcd04;
+        --tertiary-color: #0072ff;
+        --text-color: #ffffff;
+
+        /* Sizes */
+        --nav-size: 15px;
+        --logo-size: 20px;
+        --big-size: 30px;
+        --text-font: 12px;
+        --heading-size: 15px;
+        --small-size: 10px;
+    }
+    /* nav 430px */
+    .nav-controller {
+        padding: 0px 4%;
+        position: relative;
+        display: grid;
+        grid-template-columns: 1fr 30px 30px;
+        align-items: center;
+        column-gap: 30px;
+    }
+
+    .nav-buttons {
+        position: absolute;
+        flex-direction: column;
+        transition: all 0.55s linear;
+        right: 0;
+        bottom: 0;
+        height: 0px;
+        overflow-y: hidden;
+        transform: translateY(100%);
+        left: 0;
+        align-items: flex-start;
+        padding-left: 10%;
+        background: var(--primary-color);
+    }
+
+    .nav-buttons.active {
+        height: 200px;
+    }
+
+    .nav-buttons li {
+        font-weight: 500;
+        padding: 10px;
+    }
+
+    .hamburger-menu {
+        display: block;
+        font-size: 25px;
+        cursor: pointer;
+        color: var(--secondary-color);
+    }
+
+    .profile-item {
+        font-size: 25px;
+    }
+
+    .nav-buttons.active {
+        height: 120px;
+    }
+
+    /* Landing */
+    .land-controller {
+        flex-direction: column;
+    }
+
+    .text-div {
+        width: 100%;
+    }
+
+    .p-div p {
+        margin-top: 5px;
+        line-height: 20px;
+        text-align: justify;
+    }
+
+    .skills-div {
+        grid-template-columns: repeat(5, 1fr);
+    }
+    .skill-img {
+        height: 80%;
+        border-radius: 5px;
+    }
+    .image-div {
+        display: none;
+    }
+    /* Education */
+
+    .edu-cert {
+        width: 100px;
+        height: auto;
+        border-radius: 10px;
+    }
+    .edu-level-text-details h4 {
+        line-height: 1.5rem;
+    }
+
+    /* Project */
+    .project-img {
+        border-radius: 5px;
+    }
+
+    .project-img img {
+        aspect-ratio: 1/0.7;
+    }
+
+    /* Footer */
+    .email-div input {
+        margin-bottom: 5px;
+    }
+    .direct-message textarea {
+        height: 70px;
+    }
+
+    .login-control form {
+        width: 100%;
+    }
+}
+
+@media (max-width: 375px) {
+    :root {
+        /* Colors */
+        --primary-color: #2e656a;
+        --secondary-color: #ffcd04;
+        --tertiary-color: #0072ff;
+        --text-color: #ffffff;
+
+        /* Sizes */
+        --nav-size: 15px;
+        --logo-size: 20px;
+        --big-size: 27px;
+        --text-font: 10px;
+        --heading-size: 15px;
+        --small-size: 10px;
+    }
+
+    .landing-page {
+        padding-top: 20%;
+    }
+
+    .project-main {
+        margin-top: 5%;
+    }
+
+    .projects {
+        row-gap: 10%;
+        margin-top: 1rem;
+    }
+
+    .footer-control {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .direct-message,
+    .socials {
+        width: 80%;
+        margin-top: 3%;
+        align-self: center;
+    }
+
+    .social-handler a {
+        font-size: 15px;
+    }
+}
+
+/* Rafiu */
