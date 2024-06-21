@@ -85,7 +85,8 @@
         {
             "project": "Backend",
             "name": "Gariba Lodge API",
-            "link": "https://garibatrial.onrender.com/api/v1/reviews"
+            "link": "https://garibatrial.onrender.com/api/v1/reviews",
+            "image": "/Images/API.png"
         },
         {
             "project": "Backend",
